@@ -6,15 +6,8 @@ use Hash;
 
 class HashController extends Controller
 {
-  private $hash = null;
-  
-  public function __construct(Hash $hash){
-    $this->hash = $hash;
-  }
-  
   public function hash($value){
-    dd($this->hash::make('test')));
-    return view('hash')->with('hashvalue', $this->hash->make($value));
+    return view('hash')->with('hashvalue', Hash::make($value));
   }
 
 }
