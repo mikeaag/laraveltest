@@ -23,4 +23,4 @@ Route::get('/hash/{value}', ['uses' => 'HashController@hash']);
 
 Route::get('/fred', function(){
     return 'Hello Fred';
-})
+});
