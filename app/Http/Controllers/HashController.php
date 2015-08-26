@@ -13,6 +13,7 @@ class HashController extends Controller
   }
   
   public function hash($value){
+    dd($this->hash);
     return view('hash')->with('hashvalue', $this->hash->make($value));
   }
 
