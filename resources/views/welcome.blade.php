@@ -41,6 +41,7 @@
                 <div class="title">Laravel 5</div>
                 <p>Testing!</p>
                 <p>More Testing</p>
+                <p><strong>Server:</strong> {!! $_SERVER['SERVER_NAME'] !!}</p>
             </div>
         </div>
     </body>
